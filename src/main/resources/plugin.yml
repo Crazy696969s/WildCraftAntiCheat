@@ -1,0 +1,19 @@
+name: WildCraftAntiCheat
+version: ${version}
+main: ca.wildcraft.anticheat.WildCraftAntiCheat
+api-version: '1.21'
+author: WildCraft Survival
+description: Staff X-ray investigation suite for WildCraft Survival.
+softdepend: [CoreProtect, LiteBans]
+commands:
+  wcax:
+    description: Opens the WildCraft AntiCheat staff dashboard.
+    usage: /wcax [gui|reload|test|reset <player>]
+    aliases: [wildcraftanticheat]
+permissions:
+  wildcraftanticheat.admin:
+    default: op
+  wildcraftanticheat.alerts:
+    default: op
+  wildcraftanticheat.bypass:
+    default: op

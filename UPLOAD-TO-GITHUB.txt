@@ -1,0 +1,10 @@
+1. Extract WildCraftAntiCheat-3.0.0-GitHub-Project.zip.
+2. Open your GitHub WildCraftAntiCheat repository.
+3. Click Add file -> Upload files.
+4. Drag every extracted file and folder into the upload area.
+5. Commit the upload to main.
+6. Open the Actions tab.
+7. Open Build WildCraftAntiCheat.
+8. Click Run workflow.
+9. When it turns green, open the run and download the WildCraftAntiCheat-3.0.0 artifact.
+10. Extract that artifact to get WildCraftAntiCheat-3.0.0.jar.

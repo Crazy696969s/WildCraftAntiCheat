@@ -1,0 +1,40 @@
+server-name: "WildCraft Survival"
+debug: false
+
+alerts:
+  in-game: true
+  discord: true
+  cooldown-seconds: 30
+
+discord:
+  webhook-url: "PASTE_DISCORD_WEBHOOK_URL_HERE"
+  staff-role-id: ""
+
+detection:
+  score-threshold: 15.0
+  minimum-veins: 3
+  hidden-ore-bonus: 2.0
+  exposed-ore-multiplier: 0.35
+  score-decay-per-hour: 2.0
+  ores:
+    DIAMOND_ORE: 4.0
+    DEEPSLATE_DIAMOND_ORE: 4.0
+    EMERALD_ORE: 3.0
+    DEEPSLATE_EMERALD_ORE: 3.0
+    ANCIENT_DEBRIS: 5.0
+
+ignored-worlds:
+  - spawn
+  - lobby
+
+gui:
+  title: "<dark_gray>WildCraft AntiCheat"
+  page-size: 21
+
+integrations:
+  coreprotect:
+    enabled: true
+    command: "co lookup user:{player} time:30d action:-block"
+  litebans:
+    enabled: true
+    command: "history {player}"
